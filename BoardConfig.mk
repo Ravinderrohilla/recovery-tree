@@ -103,7 +103,8 @@ BOARD_MAIN_PARTITION_LIST := \
     system \
     product \
     vendor \
-	odm
+	odm \
+	system_ext
 
  # File System
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -164,9 +165,9 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 ##################################
 # PBRP stuffs - specific configs #
 ##################################
-PB_DISABLE_DEFAULT_TREBLE_COMP := true
-PB_TORCH_PATH := "/sys/class/flashlight"
-PB_TORCH_MAX_BRIGHTNESS := 1
+#PB_DISABLE_DEFAULT_TREBLE_COMP := true
+#PB_TORCH_PATH := "/sys/class/flashlight"
+#PB_TORCH_MAX_BRIGHTNESS := 1
 
 # TWRP Configuration
 include $(DEVICE_PATH)/configs/TWRP-Config.mk
