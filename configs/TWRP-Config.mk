@@ -34,7 +34,7 @@ TW_EXCLUDE_TWRP_APP := true
 TW_BACKUP_EXCLUSIONS := /data/fonts/,/data/nandswap
 
 # Maintainer/Version
-TW_DEVICE_VERSION := perilouspike
+TW_DEVICE_VERSION := Dr-Wolfbain
 
 # Set brightness path and level
 TW_MAX_BRIGHTNESS := 2047
