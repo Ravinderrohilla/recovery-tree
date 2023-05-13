@@ -26,8 +26,8 @@ local chkdev=$(echo "$BASH_SOURCE" | grep -w $FDEVICE)
    fi
 }
 
-   if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
-	fox_get_target_device
+if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
+   fox_get_target_device
 fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
