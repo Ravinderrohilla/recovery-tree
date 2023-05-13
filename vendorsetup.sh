@@ -39,7 +39,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export LC_ALL="C"
 
 # Version / Maintainer infos.
-	export OF_MAINTAINER="perilouspike"
+	export OF_MAINTAINER="Dr-Ravinder"
 	export FOX_VERSION="R11.1_1"
 	export FOX_BUILD_TYPE="Unofficial-Stable"
 
