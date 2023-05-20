@@ -5,8 +5,11 @@ The Realme narzo 30 Pro 5G (codenamed: RMX2117) is a mid-range smartphone launch
 #FOR Building ofox      
 cd ~/OrangeFox # (or whichever directory has the synced manifest)
     source build/envsetup.sh
+    
   export ALLOW_MISSING_DEPENDENCIES=true
+  
   export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+  
   export LC_ALL="C"
 
 # for branches lower than 11.0
