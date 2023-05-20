@@ -171,8 +171,8 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 
 #orange fox flashlight
 OF_FLASHLIGHT_ENABLE := 1
-OF_TORCH_PATH1 := /sys/class/flashlight/mt-flash-led1
-OF_TORCH_PATH2 := /sys/class/flashlight/mt-flash-led2
+OF_FL_PATH1 := "/sys/class/flashlight/mt-flash-led1"
+OF_FL_PATH2 := "/sys/class/flashlight/mt-flash-led2"
 
 
 
