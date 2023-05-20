@@ -2,6 +2,47 @@
                                                  
 The Realme narzo 30 Pro 5G (codenamed: RMX2117) is a mid-range smartphone launched in 2021, 4th March.
 
+#FOR Building ofox      
+cd ~/OrangeFox # (or whichever directory has the synced manifest)
+    source build/envsetup.sh
+  export ALLOW_MISSING_DEPENDENCIES=true
+  export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+  export LC_ALL="C"
+
+# for branches lower than 11.0
+  lunch omni_<device>-eng && mka recoveryimage
+
+# for branches lower than 11.0, with A/B partitioning
+  lunch omni_<device>-eng && mka bootimage
+
+# for the 11.0 (or higher) branch
+  lunch twrp_<device>-eng && mka adbd recoveryimage
+
+# for the 11.0 (or higher) branch, with A/B partitioning
+  lunch twrp_<device>-eng && mka adbd bootimage
+
+# for the 12.1 (or higher) branch, vendor_boot-as-recovery builds [this is highly experimental and unsupported!]
+  lunch twrp_<device>-eng && mka adbd vendorbootimagecd ~/OrangeFox # (or whichever directory has the synced manifest)
+    source build/envsetup.sh
+  export ALLOW_MISSING_DEPENDENCIES=true
+  export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+  export LC_ALL="C"
+
+# for branches lower than 11.0
+  lunch omni_<device>-eng && mka recoveryimage
+
+# for branches lower than 11.0, with A/B partitioning
+  lunch omni_<device>-eng && mka bootimage
+
+# for the 11.0 (or higher) branch
+  lunch twrp_<device>-eng && mka adbd recoveryimage
+
+# for the 11.0 (or higher) branch, with A/B partitioning
+  lunch twrp_<device>-eng && mka adbd bootimage
+
+# for the 12.1 (or higher) branch, vendor_boot-as-recovery builds [this is highly experimental and unsupported!]
+  lunch twrp_<device>-eng && mka adbd vendorbootimage
+
 ## Device specifications
 
 | Device                  | Realme Narzo 30 Pro 5G                                   |
