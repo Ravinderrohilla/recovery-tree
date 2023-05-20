@@ -169,10 +169,7 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 #PB_TORCH_PATH := "/sys/class/flashlight"
 #PB_TORCH_MAX_BRIGHTNESS := 1
 
-#orange fox flashlight
-OF_FLASHLIGHT_ENABLE := 1
-OF_FL_PATH1 := "/sys/class/flashlight/mt-flash-led1"
-OF_FL_PATH2 := "/sys/class/flashlight/mt-flash-led2"
+
 
 
 
