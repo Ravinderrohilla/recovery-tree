@@ -15,6 +15,8 @@ cd ~/OrangeFox # (or whichever directory has the synced manifest)
   
   unset USE CCACHE
 
+  export OF_ADVANCED_SECURITY=1
+
 
 # for the 11.0 (or higher) branch
   lunch twrp_RMX2117-eng && mka adbd recoveryimage
