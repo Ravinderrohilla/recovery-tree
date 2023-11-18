@@ -149,8 +149,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     # Enable the flashlight feature.
 		export OF_FLASHLIGHT_ENABLE=1
 	# Set custom flashlight path.
-		export OF_FL_PATH1="/sys/class/flashlight/mt-flash-led1/mode"
-		export OF_FL_PATH1="/sys/class/flashlight/mt-flash-led2/mode"
+		export OF_FL_PATH1="/sys/class/flashlight"
+		export OF_FL_PATH1="/sys/class/flashlight"
     # MIUI OTA, and dm-verity/forced-encryption patching will be disabled
 		export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
 	# Enable support for Realme oZip decryption
